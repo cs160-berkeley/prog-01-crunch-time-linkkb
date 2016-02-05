@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.kevin.prog01_crunchtime.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Exercise Converter"
+        android:id="@+id/appLabel"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal"
+        android:onClick="buttonOnClick"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Equal to"
+        android:id="@+id/inputLabel"
+        android:layout_alignBottom="@+id/editText"
+        android:layout_alignTop="@+id/editText"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_below="@+id/appLabel"
+        android:layout_toEndOf="@+id/inputLabel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Units"
+        android:id="@+id/unitsLabel"
+        android:layout_below="@+id/appLabel"
+        android:layout_alignEnd="@+id/radioGroup1" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/radioGroup1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/editText">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pushups (reps)"
+            android:id="@+id/buttonPush"
+            android:singleLine="false"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/radioButton6"
+            android:layout_toRightOf="@+id/inputLabel"
+            android:onClick="onRadioButtonClicked" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#"
+            android:id="@+id/outputPush"
+            android:textSize="@dimen/abc_text_size_large_material"
+            android:layout_below="@+id/outputJog"
+            android:layout_toRightOf="@+id/radioGroup1"
+            android:layout_gravity="right" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Situps (reps)"
+            android:id="@+id/buttonSit"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/buttonJump"
+            android:layout_toRightOf="@+id/inputLabel"
+            android:onClick="onRadioButtonClicked" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#"
+            android:id="@+id/outputSit"
+            android:textSize="@dimen/abc_text_size_large_material"
+            android:layout_below="@+id/outputJump"
+            android:layout_toRightOf="@+id/radioGroup1"
+            android:layout_gravity="right" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jumping Jacks (minutes)"
+            android:id="@+id/buttonJump"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/buttonPush"
+            android:layout_toRightOf="@+id/inputLabel"
+            android:onClick="onRadioButtonClicked" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#"
+            android:id="@+id/outputJump"
+            android:textSize="@dimen/abc_text_size_large_material"
+            android:layout_below="@+id/outputPush"
+            android:layout_toRightOf="@+id/radioGroup1"
+            android:layout_gravity="right" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jogging (minutes)"
+            android:id="@+id/buttonJog"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/buttonSit"
+            android:layout_toRightOf="@+id/inputLabel"
+            android:onClick="onRadioButtonClicked" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#"
+            android:id="@+id/outputJog"
+            android:textSize="@dimen/abc_text_size_large_material"
+            android:layout_alignTop="@+id/radioGroup1"
+            android:layout_alignEnd="@+id/editText"
+            android:layout_gravity="right" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Calories"
+            android:id="@+id/caloriesLabel"
+            android:layout_below="@+id/radioGroup1"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="#"
+            android:id="@+id/caloriesOut"
+            android:layout_gravity="center_horizontal" />
+
+    </RadioGroup>
+
+</RelativeLayout>
