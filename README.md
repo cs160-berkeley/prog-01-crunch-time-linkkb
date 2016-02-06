@@ -8,7 +8,7 @@ Kevin Baum ([link.kb@berkeley.edu](mailto:link.kb@berkeley.edu))
 
 ## Demo Video
 
-See [your demo video title here] (https://link_to_your_video)
+See [the demo video] (https://youtu.be/KTMArtgpBYk)
 
 ## Screenshots
 
