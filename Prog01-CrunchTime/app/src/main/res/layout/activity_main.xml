@@ -45,6 +45,7 @@
         android:ems="10"
         android:id="@+id/editText"
         android:layout_below="@+id/appLabel"
+        android:layout_alignEnd="@+id/unitsLabel"
         android:layout_toEndOf="@+id/inputLabel" />
 
     <TextView
@@ -78,7 +79,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="#"
+            android:text="0 reps"
             android:id="@+id/outputPush"
             android:textSize="@dimen/abc_text_size_large_material"
             android:layout_below="@+id/outputJog"
@@ -98,7 +99,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="#"
+            android:text="0 reps"
             android:id="@+id/outputSit"
             android:textSize="@dimen/abc_text_size_large_material"
             android:layout_below="@+id/outputJump"
@@ -118,12 +119,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="#"
+            android:text="0 minutes"
             android:id="@+id/outputJump"
             android:textSize="@dimen/abc_text_size_large_material"
             android:layout_below="@+id/outputPush"
             android:layout_toRightOf="@+id/radioGroup1"
-            android:layout_gravity="right" />
+            android:layout_gravity="right"
+            android:singleLine="true" />
 
         <RadioButton
             android:layout_width="wrap_content"
@@ -138,7 +140,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="#"
+            android:text="0 minutes"
             android:id="@+id/outputJog"
             android:textSize="@dimen/abc_text_size_large_material"
             android:layout_alignTop="@+id/radioGroup1"
@@ -159,7 +161,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="#"
+            android:text="0"
             android:id="@+id/caloriesOut"
             android:layout_gravity="center_horizontal" />
 
